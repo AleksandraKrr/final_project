@@ -1,0 +1,146 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  min-height: 10vh;
+  background-color: #010032;
+  padding: 20px 80px;
+}
+
+.header__webFolioLogo {
+  max-height: 32px;
+  max-width: 152px;
+  margin-left: 0;
+}
+
+.header__navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  
+  list-style: none;
+
+  text-align: center;
+}
+
+.navigation-list__item {
+  padding: 10px;
+
+  transform: scale(1, 1);
+  transition-duration: 1500ms;
+}
+
+.navigation-list__item:hover {
+  transform: scale(1.1, 1.1);
+  transition-duration: 1500ms;
+}
+
+.navigation-list__link {
+  text-decoration: none;
+  
+  font-size: 15px;
+  line-height: 19px;
+  color: white;
+}
+
+.header__cartLogo {
+  max-width: 25px;
+
+  transform: scale(1, 1);
+  transition-duration: 500ms;
+}
+
+.header__cartLogo:hover {
+  transform: scale(1.1, 1.1);
+  transition-duration: 500ms;
+}
+
+.header_cart-btn {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+
+  border: 0;
+  max-width: 129px;
+  background-color: transparent;
+  color: white;
+
+  font-size: 16px;
+  line-height: 19px;
+}
+  
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 20px 50px;
+    justify-content: center;
+  }
+
+  .info__img {
+    display: none;
+  }
+
+  .navigation-list__link {
+    font-size: 13px;
+    line-height: 17px;
+  }
+
+  .header_cart-btn {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 20px 20px;
+    justify-content: center;
+  }
+
+  .navigation-list__link {
+    font-size: 11px;
+    line-height: 15px;
+  }
+
+  .header_cart-btn {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .header_cart-btn .cart-btn__text {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 20px 20px;
+    justify-content: center;
+  }
+
+  .navigation-list {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header {
+    padding: 20px 20px;
+    justify-content: center;
+  }
+}

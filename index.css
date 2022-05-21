@@ -1,0 +1,116 @@
+@import url('./stylesheets/header.css');
+@import url('./stylesheets/info.css');
+@import url('./stylesheets/about.css');
+@import url('./stylesheets/work.css');
+@import url('./stylesheets/services.css');
+@import url('./stylesheets/testimonials.css');
+@import url('./stylesheets/process.css');
+@import url('./stylesheets/shop.css');
+@import url('./stylesheets/blog.css');
+@import url('./stylesheets/section-link.css');
+@import url('./stylesheets/footer.css');
+
+* {
+  box-sizing: border-box;
+
+  padding: 0;
+  margin: 0;
+
+  font-family: 'Epilogue', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.general_container {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+}
+
+.logo_white__wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+}
+
+.logo_pirple__wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  text-transform: uppercase;
+ 
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(69, 67, 232, 1);
+}
+
+.logo-wave {
+  max-width: 72px;
+  height: 10px;
+}
+
+.box_title {
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.box_title_white {
+  font-size: 24px;
+  line-height: 30px;
+  color: white;
+}
+
+.info {
+  background-image: url(./support/infoSectionPicture.png);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+.section-link__background-btn {
+  background-image: url(./support/section-link_backgroung_img.png);
+  background-size: cover;
+}
+
+
+
+@media (max-width: 1024px) {
+  .box_title,
+  .box_title_white {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .box_title,
+  .box_title_white {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .box_title,
+  .box_title_white {
+    font-size: 17px;
+    line-height: 22px;
+  }
+}
+
+  @media (max-width: 320px) {
+  .box_title,
+  .box_title_white {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}

@@ -1,0 +1,157 @@
+.testimonials {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  justify-items: center;
+
+  min-height: 100vh;
+  padding: 120px 80px;
+  background-color: rgba(216, 216, 235, 1);
+}
+
+.testimonials__title {
+  font-size: 60px;
+  line-height: 66px;
+  color: #000000;
+
+  max-width: 623px;
+  padding: 26px 0;
+
+  text-align: center;
+}
+
+.testimonials__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  width: 100%;
+  padding-top: 26px;
+  padding-bottom: 108px;
+}
+
+.testimonials__review-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+
+  background-color: white;
+  padding: 41px;
+  border-radius: 20px 20px 0px 20px;
+  max-width: 576px;
+  width: 100%;
+  max-height: 350px;
+  min-height: 300px;
+  height: 100%;
+}
+
+.stars {
+  max-width: 152px;
+  height: 24px;
+}
+
+.review-box__header {
+  padding-top: 15px;
+}
+
+.review-box__text {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.arrow-btn__container {
+  display: flex;
+}
+
+.arrow-btn {
+  background-color: transparent;
+  border: 0;
+}
+
+.arrow-btn:hover {
+  transform: scale(1.3, 1.3);
+}
+
+.client-info {
+  justify-content: flex-start;
+  justify-self: flex-end;
+}
+
+
+@media (max-width: 1024px) {
+  .testimonials {
+    padding: 20px 20px;
+    min-height: 80vh;
+  }
+
+  .testimonials__title {
+    font-size: 50px;
+    line-height: 55px;
+  }
+
+  .review-box__text {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .testimonials__review-box {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials__review-box {
+    overflow: auto;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .testimonials__container {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .testimonials__title {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .review-box__text {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials .logo_pirple__wrapper .logo-wave {
+    display: none;
+  }
+
+  .testimonials__title {
+    font-size: 38px;
+    line-height: 45px;
+    padding: 10px 0px;
+  }
+
+  .testimonials__review-box {
+    width: 100%;
+  }
+
+  .review-box__text {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .testimonials__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .review-box__text {
+    font-size: 11px;
+    line-height: 18px;
+  }
+}
